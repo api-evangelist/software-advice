@@ -1,15 +1,13 @@
 aid: software-advice
-url: 
-  https://raw.githubusercontent.com/api-evangelist/software-advice/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/software-advice/refs/heads/main/apis.yml
 apis: []
 name: Software Advice
 tags:
-  - Software Reviews
   - B2B
   - Software Recommendations
+  - Software Reviews
 type: Index
-image: 
-  https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
   - url: https://www.softwareadvice.com/
