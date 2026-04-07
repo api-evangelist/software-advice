@@ -1,51 +1,56 @@
 aid: software-advice
-url: https://raw.githubusercontent.com/api-evangelist/software-advice/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/software-advice/refs/heads/main/apis.yml
 apis: []
 name: Software Advice
 tags:
-- Software Reviews
-- B2B
-- Software Recommendations
+  - Software Reviews
+  - B2B
+  - Software Recommendations
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: 
+  https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
-- url: https://www.softwareadvice.com/
-  name: Software Advice Website
-  type: Website
-- url: https://www.softwareadvice.com/about-us/
-  name: About Us
-  type: About
-- url: https://www.softwareadvice.com/contact/
-  name: Contact
-  type: Contact
-- url: https://www.softwareadvice.com/vendors/
-  name: Vendor Listing
-  type: VendorListing
-- url: https://www.softwareadvice.com/vendor-listing-faq/
-  name: Vendor Listing FAQ
-  type: FAQ
-- url: https://www.softwareadvice.com/legal-page/privacy/
-  name: Privacy Policy
-  type: PrivacyPolicy
-- url: https://www.softwareadvice.com/general-user-terms
-  name: Terms of Service
-  type: TermsOfService
-- url: https://www.softwareadvice.com/blog/
-  name: Blog
-  type: Blog
-- url: https://twitter.com/SoftwareAdvice
-  name: Software Advice on X
-  type: X
-- url: https://www.linkedin.com/company/software-advice
-  name: Software Advice on LinkedIn
-  type: LinkedIn
-- url: https://www.facebook.com/softwareadvice
-  name: Software Advice on Facebook
-  type: Facebook
-- url: https://www.youtube.com/user/SoftwareAdvice
-  name: Software Advice on YouTube
-  type: YouTube
+  - url: https://www.softwareadvice.com/
+    name: Software Advice Website
+    type: Website
+  - url: https://www.softwareadvice.com/about-us/
+    name: About Us
+    type: About
+  - url: https://www.softwareadvice.com/contact/
+    name: Contact
+    type: Contact
+  - url: https://www.softwareadvice.com/vendors/
+    name: Vendor Listing
+    type: VendorListing
+  - url: https://www.softwareadvice.com/vendor-listing-faq/
+    name: Vendor Listing FAQ
+    type: FAQ
+  - url: https://www.softwareadvice.com/legal-page/privacy/
+    name: Privacy Policy
+    type: PrivacyPolicy
+  - url: https://www.softwareadvice.com/general-user-terms
+    name: Terms of Service
+    type: TermsOfService
+  - url: https://www.softwareadvice.com/blog/
+    name: Blog
+    type: Blog
+  - url: https://twitter.com/SoftwareAdvice
+    name: Software Advice on X
+    type: X
+  - url: https://www.linkedin.com/company/software-advice
+    name: Software Advice on LinkedIn
+    type: LinkedIn
+  - url: https://www.facebook.com/softwareadvice
+    name: Software Advice on Facebook
+    type: Facebook
+  - url: https://www.youtube.com/user/SoftwareAdvice
+    name: Software Advice on YouTube
+    type: YouTube
 created: '2026-03-24'
 modified: '2026-03-24'
 specificationVersion: '0.19'
+description: >-
+  Software Advice is a free online service that helps businesses navigate the software
+  buying process by providing software reviews, comparisons, and personalized recommendations.
