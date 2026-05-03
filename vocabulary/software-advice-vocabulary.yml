@@ -1,0 +1,81 @@
+vocabulary:
+  name: Software Advice Vocabulary
+  description: >-
+    Operational vocabulary and taxonomy for Software Advice, the Gartner-owned
+    software review and recommendation platform covering 300+ software categories.
+  version: '1.0'
+  created: '2026-05-02'
+  modified: '2026-05-02'
+
+domains:
+  - name: Software Reviews
+    description: Core review and rating concepts
+    terms:
+      - term: Review
+        definition: >-
+          A user-submitted evaluation of a software product including ratings,
+          written feedback, pros and cons, and reviewer context.
+      - term: Verified Review
+        definition: >-
+          A review where the platform has confirmed the reviewer is a genuine
+          user of the software product being evaluated.
+      - term: Rating
+        definition: >-
+          A numerical score (1-5 stars) given to a software product across
+          overall satisfaction and specific dimensions.
+      - term: Rating Dimensions
+        definition: >-
+          The specific aspects rated in a Software Advice review: ease of use,
+          features and functionality, customer support, and value for money.
+
+  - name: Software Categories
+    description: Software market category taxonomy
+    terms:
+      - term: Software Category
+        definition: >-
+          A market segment classification for software products, such as CRM,
+          ERP, Project Management, Accounting, or HR Management.
+      - term: Market Leader
+        definition: >-
+          A software product recognized by Software Advice as having consistently
+          high ratings and market presence in its category.
+      - term: FrontRunner
+        definition: >-
+          Software Advice's data-driven recognition program highlighting the
+          top-rated products in a category based on user reviews.
+
+  - name: Buyers and Vendors
+    description: Platform participant concepts
+    terms:
+      - term: Software Buyer
+        definition: >-
+          A business or individual using Software Advice to research and select
+          software solutions for their organization.
+      - term: Software Vendor
+        definition: >-
+          A company that offers a software product listed on the Software Advice
+          platform for review and recommendation.
+      - term: Vendor Listing
+        definition: >-
+          A vendor's presence on the Software Advice marketplace, enabling their
+          products to be found and reviewed by potential buyers.
+      - term: Advisory Session
+        definition: >-
+          A consultation with a Software Advice software expert who helps a buyer
+          identify the best software options for their needs.
+
+  - name: Recommendation Engine
+    description: Software recommendation concepts
+    terms:
+      - term: Software Recommendation
+        definition: >-
+          A personalized suggestion from Software Advice matching a buyer's
+          requirements to the most suitable software products.
+      - term: Comparison
+        definition: >-
+          A side-by-side evaluation of two or more software products across
+          features, pricing, ratings, and user sentiment.
+      - term: Shortlist
+        definition: >-
+          A curated list of software products recommended for a buyer to evaluate
+          based on their specific requirements and preferences.

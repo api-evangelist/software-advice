@@ -1,0 +1,34 @@
+{
+  "title": "Software Advice Review - Example Data",
+  "description": "Example of a Software Advice user review for a CRM software product",
+  "data": {
+    "id": "rev-12345678",
+    "product": {
+      "id": "prod-crm-001",
+      "name": "Salesforce Sales Cloud",
+      "vendor": "Salesforce",
+      "category": "CRM",
+      "url": "https://www.softwareadvice.com/crm/salesforce-profile/"
+    },
+    "rating": 4.5,
+    "reviewTitle": "Powerful CRM with a steep learning curve",
+    "reviewBody": "Salesforce Sales Cloud has transformed how our sales team manages leads and opportunities. The automation capabilities are excellent and the reporting is very comprehensive. However, the initial setup required significant time and the cost is quite high for small teams.",
+    "pros": "Highly customizable, excellent automation, strong reporting and analytics, great third-party integrations, mobile app is solid",
+    "cons": "Expensive for small teams, steep learning curve, implementation requires specialist knowledge, complex admin interface",
+    "reviewer": {
+      "industry": "Technology",
+      "companySize": "51-200",
+      "role": "Sales Manager",
+      "usageDuration": "2-5 years"
+    },
+    "ratings": {
+      "easeOfUse": 3.5,
+      "features": 5.0,
+      "customerSupport": 4.0,
+      "valueForMoney": 3.5
+    },
+    "verified": true,
+    "createdAt": "2026-03-15T09:30:00Z",
+    "category": "CRM"
+  }
+}

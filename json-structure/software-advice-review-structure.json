@@ -1,0 +1,57 @@
+{
+  "title": "Software Advice - Review Resource Structure",
+  "description": "JSON Structure documentation for Software Advice review and product data",
+  "version": "1.0",
+  "source": "https://www.softwareadvice.com/",
+  "structures": [
+    {
+      "name": "Review",
+      "description": "A user review of a software product on Software Advice",
+      "fields": [
+        {"name": "id", "type": "string", "required": false, "description": "System-generated review identifier"},
+        {"name": "product", "type": "Product", "required": true, "description": "The software product being reviewed"},
+        {"name": "rating", "type": "number(1-5)", "required": true, "description": "Overall star rating"},
+        {"name": "reviewTitle", "type": "string", "required": true, "description": "Short summary title of the review"},
+        {"name": "reviewBody", "type": "string", "required": false, "description": "Detailed review text"},
+        {"name": "pros", "type": "string", "required": false, "description": "What the reviewer liked"},
+        {"name": "cons", "type": "string", "required": false, "description": "What the reviewer disliked"},
+        {"name": "reviewer", "type": "Reviewer", "required": false, "description": "Reviewer metadata"},
+        {"name": "ratings", "type": "DetailedRatings", "required": false, "description": "Granular dimension ratings"},
+        {"name": "verified", "type": "boolean", "required": false, "description": "Reviewer verification status"},
+        {"name": "createdAt", "type": "date-time", "required": false, "description": "Review submission timestamp"},
+        {"name": "category", "type": "string", "required": false, "description": "Software category"}
+      ]
+    },
+    {
+      "name": "Product",
+      "description": "A software product listed on Software Advice",
+      "fields": [
+        {"name": "id", "type": "string", "required": false, "description": "Product identifier"},
+        {"name": "name", "type": "string", "required": true, "description": "Product name"},
+        {"name": "vendor", "type": "string", "required": false, "description": "Software vendor name"},
+        {"name": "category", "type": "string", "required": false, "description": "Primary software category"},
+        {"name": "url", "type": "uri", "required": false, "description": "Software Advice product page URL"}
+      ]
+    },
+    {
+      "name": "Reviewer",
+      "description": "Metadata about the person who submitted the review",
+      "fields": [
+        {"name": "industry", "type": "string", "required": false, "description": "Reviewer's industry"},
+        {"name": "companySize", "type": "enum", "required": false, "description": "Size range of reviewer's company"},
+        {"name": "role", "type": "string", "required": false, "description": "Reviewer's job title/role"},
+        {"name": "usageDuration", "type": "string", "required": false, "description": "How long they have used the product"}
+      ]
+    },
+    {
+      "name": "DetailedRatings",
+      "description": "Dimension-specific ratings for a software review",
+      "fields": [
+        {"name": "easeOfUse", "type": "number(1-5)", "required": false, "description": "Ease of use rating"},
+        {"name": "features", "type": "number(1-5)", "required": false, "description": "Features and functionality rating"},
+        {"name": "customerSupport", "type": "number(1-5)", "required": false, "description": "Customer support quality rating"},
+        {"name": "valueForMoney", "type": "number(1-5)", "required": false, "description": "Value for money rating"}
+      ]
+    }
+  ]
+}

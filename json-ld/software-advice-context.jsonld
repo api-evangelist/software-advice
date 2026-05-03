@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "sa": "https://www.softwareadvice.com/ns#",
+    "Review": {
+      "@id": "schema:Review",
+      "@type": "@id"
+    },
+    "SoftwareProduct": {
+      "@id": "schema:SoftwareApplication",
+      "@type": "@id"
+    },
+    "reviewTitle": {
+      "@id": "schema:name"
+    },
+    "reviewBody": {
+      "@id": "schema:reviewBody"
+    },
+    "rating": {
+      "@id": "schema:ratingValue",
+      "@type": "xsd:decimal"
+    },
+    "product": {
+      "@id": "schema:itemReviewed"
+    },
+    "reviewer": {
+      "@id": "schema:author"
+    },
+    "verified": {
+      "@id": "sa:verified",
+      "@type": "xsd:boolean"
+    },
+    "pros": {
+      "@id": "sa:pros"
+    },
+    "cons": {
+      "@id": "sa:cons"
+    },
+    "industry": {
+      "@id": "schema:industry"
+    },
+    "companySize": {
+      "@id": "schema:numberOfEmployees"
+    },
+    "easeOfUse": {
+      "@id": "sa:easeOfUse",
+      "@type": "xsd:decimal"
+    },
+    "features": {
+      "@id": "sa:features",
+      "@type": "xsd:decimal"
+    },
+    "customerSupport": {
+      "@id": "sa:customerSupport",
+      "@type": "xsd:decimal"
+    },
+    "valueForMoney": {
+      "@id": "sa:valueForMoney",
+      "@type": "xsd:decimal"
+    },
+    "category": {
+      "@id": "schema:applicationCategory"
+    },
+    "vendor": {
+      "@id": "schema:provider"
+    },
+    "SoftwareAdvice": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    }
+  }
+}

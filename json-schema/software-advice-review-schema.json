@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.github.io/software-advice/json-schema/software-advice-review-schema.json",
+  "title": "Software Advice Review",
+  "description": "JSON Schema for a Software Advice user review of a software product",
+  "type": "object",
+  "required": ["product", "rating", "reviewTitle"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the review"
+    },
+    "product": {
+      "$ref": "#/definitions/Product"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Overall rating from 1 to 5 stars"
+    },
+    "reviewTitle": {
+      "type": "string",
+      "description": "Title of the review"
+    },
+    "reviewBody": {
+      "type": "string",
+      "description": "Full text of the review"
+    },
+    "pros": {
+      "type": "string",
+      "description": "What the reviewer liked about the product"
+    },
+    "cons": {
+      "type": "string",
+      "description": "What the reviewer disliked about the product"
+    },
+    "reviewer": {
+      "$ref": "#/definitions/Reviewer"
+    },
+    "ratings": {
+      "$ref": "#/definitions/DetailedRatings"
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether the reviewer has been verified"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time the review was submitted"
+    },
+    "category": {
+      "type": "string",
+      "description": "Software category (e.g., CRM, ERP, Project Management)"
+    }
+  },
+  "definitions": {
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique product identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the software product"
+        },
+        "vendor": {
+          "type": "string",
+          "description": "Name of the software vendor"
+        },
+        "category": {
+          "type": "string",
+          "description": "Primary software category"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the product's Software Advice page"
+        }
+      }
+    },
+    "Reviewer": {
+      "type": "object",
+      "properties": {
+        "industry": {
+          "type": "string",
+          "description": "Industry of the reviewer's organization"
+        },
+        "companySize": {
+          "type": "string",
+          "enum": ["1-10", "11-50", "51-200", "201-1000", "1001+"],
+          "description": "Size of the reviewer's company"
+        },
+        "role": {
+          "type": "string",
+          "description": "Job role or title of the reviewer"
+        },
+        "usageDuration": {
+          "type": "string",
+          "description": "How long the reviewer has used the product"
+        }
+      }
+    },
+    "DetailedRatings": {
+      "type": "object",
+      "properties": {
+        "easeOfUse": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "features": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "customerSupport": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "valueForMoney": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    }
+  }
+}
