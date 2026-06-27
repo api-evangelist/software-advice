@@ -2,14 +2,13 @@
   "repo": "software-advice",
   "feeds": [
     {
-      "source": "https://www.softwareadvice.com/blog/feed/",
-      "error": "HTTPError"
-    },
-    {
       "source": "https://www.softwareadvice.com/blog/",
-      "error": "HTTPError"
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:11:18Z",
+  "agent_pulled": "2026-06-27"
 }
