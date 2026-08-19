@@ -96,7 +96,7 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/software-advice/refs/heads/main/vocabulary/software-advice-vocabulary.yml
 created: '2026-03-24'
 modified: '2026-05-02'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Software Advice is a free online service that helps businesses navigate the
   software buying process by providing software reviews, comparisons, and
