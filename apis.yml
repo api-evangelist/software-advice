@@ -9,7 +9,6 @@ apis:
       user reviews and expert analysis across 300+ software categories to help
       businesses find and evaluate software solutions.
     humanURL: https://www.softwareadvice.com/
-    baseURL: https://www.softwareadvice.com/
     tags:
       - Software Reviews
       - B2B
@@ -33,16 +32,19 @@ tags:
   - Gartner
 type: Index
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - api-evangelist/software-advice
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
