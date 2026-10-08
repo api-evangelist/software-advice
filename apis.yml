@@ -61,6 +61,12 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/software-advice.png
 access: 3rd-Party
 common:
+  - type: Plans
+    url: plans/software-advice-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/software-advice-rate-limits.yml
+  - type: FinOps
+    url: finops/software-advice-finops.yml
   - type: VulnerabilityDisclosure
     url: security/software-advice-vulnerability-disclosure.yml
   - type: DomainSecurity
